@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome | Employee Management System</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    color: #6c63ff;
+    font-size: 28px;
+}
+
+/* Navigation */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6c63ff;
+}
+
+/* Hero Section */
+.hero {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    animation: fadeIn 1s ease;
+}
+
+.hero h2 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.hero-buttons a {
+    text-decoration: none;
+    padding: 14px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #6c63ff;
+}
+
+.btn-secondary {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Features Section */
+.features {
+    background: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Feature Cards */
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f9f9f9;
+    width: 280px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+    color: #6c63ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>EMS</h1>
+    <nav>
+        <a href="welcome.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="search.html">Search</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Employee Management System</h2>
+        <p>
+            Manage employee records efficiently, securely, and effortlessly.
+            Our system helps you organize, search, and protect employee data.
+        </p>
+        <div class="hero-buttons">
+            <a href="register.html" class="btn-primary">Get Started</a>
+            <a href="login.html" class="btn-secondary">Login</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <h2>System Features</h2>
+    <div class="feature-box">
+
+        <div class="card">
+            <h3>Employee Registration</h3>
+            <p>Add, update, and manage employee details with ease.</p>
+        </div>
+
+        <div class="card">
+            <h3>Search Employees</h3>
+            <p>Find employee information instantly using name or ID.</p>
+        </div>
+
+        <div class="card">
+            <h3>Secure Login</h3>
+            <p>Protect sensitive employee data with secure authentication.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Employee Management System | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
