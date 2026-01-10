@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Employee | EMS</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    color: #6c63ff;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6c63ff;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.search-card {
+    background: #ffffff;
+    width: 400px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    animation: fadeIn 0.8s ease;
+}
+
+.search-card h2 {
+    text-align: center;
+    color: #6c63ff;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 7px rgba(102,126,234,0.5);
+}
+
+/* Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .search-card {
+        width: 90%;
+        padding: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>EMS</h1>
+    <nav>
+        <a href="welcome.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="search.html">Search</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="search-section">
+    <div class="search-card">
+        <h2>Search Employee</h2>
+
+        <!-- Search by Employee ID -->
+        <form action="search" method="get">
+            <label for="empId">Employee ID</label>
+            <input type="text" id="empId" name="empId" placeholder="Enter Employee ID" required>
+
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Employee Management System | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
